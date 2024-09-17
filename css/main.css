@@ -215,11 +215,11 @@ main{
 
 .hacer-yoga{background-color:#999999;
             text-align: center;
-            padding: 5%;
+            padding: 3%;
             position: relative;
             height: 15rem;
             width: 15rem;
-            border-radius: 2%;
+            border-radius: 3%;
             }
 
 .hacer-yoga img { position: absolute;
@@ -288,11 +288,13 @@ main{
 
 /*tj contactos*/
 
-.contact-box-ppal{ display: flex;}
+.contact-box-ppal{ display: flex;
+                    justify-content: space-between;
+                    }
 
 
 form {
-    max-width: 50%;
+    max-width: 80%;
     padding: 2%;
     border-radius: 2%;
     background-color: #F4EDE5;
