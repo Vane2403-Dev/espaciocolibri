@@ -6,7 +6,7 @@ Características del Proyecto
 Diseño Responsivo: El sitio está optimizado para verse bien en dispositivos de diferentes tamaños, desde móviles hasta desktops.
 Interactividad: Se han implementado elementos interactivos que mejoran la experiencia del usuario.
 Contenido Informativo: Se incluye información relevante sobre los servicios ofrecidos por el negocio.
-Uso de CSS y JavaScript: Se han utilizado tecnologías modernas para darle vida y estilo a la página.
+Uso de CSS y Sass: Se han utilizado tecnologías modernas para darle vida y estilo a la página.
 Tecnologías Utilizadas
 HTML5
 CSS3
