@@ -10,6 +10,5 @@ Uso de CSS y JavaScript: Se han utilizado tecnologías modernas para darle vida 
 Tecnologías Utilizadas
 HTML5
 CSS3
-JavaScript
-Sass (para el preprocesamiento de CSS)
-Instalación
+Sass
+
