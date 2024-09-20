@@ -1,0 +1,456 @@
+/*rese*/
+
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+
+
+    /* estilos de header*/
+    
+  
+  header { color: #FFFFFF;
+    font-family: "Raleway", serif;
+    font-size:  1.5rem;
+    background-color: #C3ACEA;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: centeR;}
+
+
+header  img { width: 30%;
+            height:30%}
+
+  a:hover img {
+                box-shadow: 0 0 10px 5px #FFFFFF; /* Sombra blanca alrededor de la imagen */
+              }
+
+
+
+.header-title {
+            padding-top: 2%;
+            text-align: left;
+            font-size: 3rem;
+            font-weight: 250;
+            text-align: center;
+             }
+
+.header-index{  
+                background-color: #FEFBF6;
+                color: #263238;
+                  }
+
+
+
+.header-pages1 {background-image: url("../img/fot/headerimgyoga.png"); }
+
+.header-pages2 {background-image: url("../img/fot/headerimgterapias.png");}
+
+.header-pages3 {background-image: url("../img/fot/headerimgturnos.png");}
+
+.header-pages4 {background-image: url("../img/fot/headerimgcontacto.png"); }
+
+
+@media screen and (min-width:800px)  {
+     .logo {display: none;}
+   }
+
+
+
+/*estilos de main*/
+main{
+    background-color:#FEFBF6;
+    color: #263238;
+    font-family: "Raleway", serif;
+    padding: 2%;
+    
+}
+
+@media screen and (max-width:800px)  {
+    main { padding: 1%;}}
+
+.seccion-title { 
+    display: inline-block;
+    position: relative;
+    font-size: 1rem;
+    font-weight: bold; 
+    padding-right: 130px; /* Espacio para la línea */
+}
+
+.seccion-title::after {  
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%; /* Centrando verticalmente la línea */
+    transform: translateY(-50%); /* Ajustar para centrar la línea */
+    width: 120px; 
+    height: 2px; 
+    background-color: #263238; 
+    }
+
+
+
+/* estilo de index*/
+
+/* contenido ppal */
+
+
+.acerca-de {display: flex;
+            flex-direction: row wrap;
+            color: #C6C6C6 ;
+            gap: 1%}
+
+.acerca-de img {margin-top: -10%;
+                width: 50%;
+                }
+                
+    .text-box {padding: 5%;
+               line-height: 4rem;
+               
+            }
+
+ .acerca-de h3{  font-size: 3rem;}
+.acerca-de p { font-size: 2rem;}
+
+@media screen and (max-width:800px)  {
+    .acerca-de img { display: none;} 
+    .acerca-de p { display: none;}
+  }     
+ 
+/* pq elegirnos*/
+
+
+.pq-elegirnos{
+            gap:2%;}
+
+ .derecha{
+    background-image: url("../img/fot/fotoindexseccion2.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    color: #263238;
+    font-weight: 500;
+    text-align: left;
+    line-height: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3 , 2fr) ;
+    grid-template-rows: repeat(3, 2fr);
+
+  
+    }
+        
+    .tjt-esp1 {
+        background-color: #C3ACEA;
+        background: linear-gradient(to bottom right, #C3ACEA, #716296) ;
+        box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+        grid-column: 9;
+        grid-row: 1;
+        border-radius: 2%;
+        padding: 3%;
+    
+    }
+    
+    .tjt-esp2 {
+        background-color: #F4BECD;
+        background: linear-gradient(to bottom right,   #F4BECD, #be9ea7);
+        box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+        grid-column:6;
+        grid-row: 2;
+        border-radius: 2%;
+        padding: 3%;
+        }
+    
+    .tjt-esp3 {
+        background-color: #263238;
+        background: linear-gradient(to bottom right, #445057,  #263238);
+        color: #999999;
+        box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+        grid-column:9;
+        grid-row:3;
+        border-radius: 2%;
+        padding: 3%;
+     }
+
+
+.derecha h3 { font-size: 2rem;}
+
+.derecha p { font-size: 1.5rem;
+            padding: 6%;}
+
+.derecha a{ font-size: 1.5rem;}
+
+
+@media screen and (max-width:600px)  {
+
+    .derecha { background-image: none;
+                width: 100%;}
+    .tjt-esp2 {grid-column: 9;}
+
+.derecha h3 { font-size: 1.5rem;}
+.derecha p { font-size: 1rem;
+            padding: 1%;}
+
+.derecha a{ font-size: 1rem;}
+}
+
+
+/*estilo Yoga-pagina 2/*
+
+/* nuestros cursos*/
+.nuestros-cursos { display:flex;
+                    flex-wrap: wrap;
+                    justify-content:  space-around;
+                    gap: 2%;
+                    margin-bottom: 3%;
+                  }
+
+
+/* nuestros profes*/
+
+.profesores { display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin-bottom: 3%;}
+
+
+.tjt-prof { text-align: center;
+            background-color: #C3ACEA;
+            border-radius: 2%;
+            padding: 2%;
+            }
+/* hacer yoga*/
+.yoga-1{display: flex;
+         flex-wrap: wrap;
+        justify-content: space-between;
+       
+    }
+
+.hacer-yoga{background-color:#999999;
+            text-align: center;
+            padding: 3%;
+            position: relative;
+            height: 15rem;
+            width: 15rem;
+            border-radius: 3%;
+            }
+
+.hacer-yoga img { position: absolute;
+                    top: 2%;
+                    right: 3%;}
+
+
+/*TERAPIAS*/
+
+.texto-terapias { text-align:justify;
+                    margin: 3% 5%;
+                    line-height: 1rem;
+                    }
+
+.texto-terapias ul li { list-style:url("../img/dibujos/florLILA.png");}
+
+.terapias-dos{display: flex;
+           text-align: justify;
+            gap: 10rem;
+            line-height: 2rem;
+          }
+
+.terapias-dos img{ width: 40%;
+                    height: 30%;}
+
+.terapias-dos p { margin-top: 8%;}
+
+@media screen and (max-width:600px)  {
+    .terapias-dos img{ display: none; }
+    .terapias-dos {
+        background-image: radial-gradient(circle, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), 
+                          url("../img/fot/imagenterapias.png");
+        background-position: center;
+    }
+    .terapias-dos p {color: #FFFFFF;
+                    text-align: center;}
+   }
+
+/*estilo de calendar*/
+
+.calendar{ display: flex;
+            flex-direction: row;
+            margin-bottom: 2%;
+            }
+.iframe-container{
+                background-color: #C3ACEA;
+                padding: 2%;
+                border-radius: 20px;
+                width: 80%;
+            }
+.iframe-container iframe {
+                border: 1% solid #999999;
+                border-radius: 15%;
+                width: 100%;}
+
+
+.calendar img { width: 50%;
+                height: 50%;}
+
+@media screen and (max-width:600px)  {
+.calendar img  { display: none;}
+.iframe-container{ width: 100%;}
+.iframe-container iframe {width:100%}}
+
+/* contactos*/
+
+/*tj contactos*/
+
+.contact-box-ppal{ display: flex;
+                    justify-content: space-between;
+                    }
+
+
+form {
+    max-width: 80%;
+    padding: 2%;
+    border-radius: 2%;
+    background-color: #F4EDE5;
+    box-shadow: 0 0 2% #999999(0, 0, 0, 0.1);}
+
+fieldset {
+    margin-bottom: 2%;
+}
+
+.fieldset-camp {
+    margin-bottom: 2%;
+}
+
+label {
+    display: block;
+    margin-bottom: 2%;
+    font-weight: bold;
+    color: #263238;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 2%;
+    border: 1px solid #F4EDE5;
+    border-radius: 2%;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease
+}
+
+
+.fieldset-botton {
+    text-align: center;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #F4BECD;
+    color: #6c757d;
+    padding: 2%;
+    border: none;
+    border-radius: 3%;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;}
+    
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus
+ {background-color: #F4EDE5;
+                border-color: #C3ACEA;
+                box-shadow: 0 0 5px rgba(136, 136, 136, 0.5);
+                transition: background-color 0.3s ease;}
+
+
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #6c757d;
+}
+
+input[type="reset"] {
+    background-color: #C3ACEA;
+}
+
+
+
+/* contactos  cajas direccion*/
+
+.contact{   margin: 10%;
+            text-align: center;
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 0%;
+            gap: 2rem;
+            }
+
+.contact-box-uno { background-color: #263238;
+ 
+                    padding: 1%;
+                    color: #FFFFFF;
+                    }
+
+.contact-box-dos{ background-color:#F4EDE5;
+                    padding: 1%;
+                    }
+
+.contact-box-tres{ background-color: #C3ACEA;
+                        padding: 1%;
+                       }
+
+.contact-iframe iframe{width: 100%;}
+
+   @media screen and (max-width:600px)  {
+
+    .contact-box-ppal{ flex-direction: column;}
+    form{ max-width: 90%;
+            margin: 5%;}
+    
+    .contact { flex-direction: column;
+               }}
+                        
+
+        
+/* estilo de footer*/
+footer{ display: flex;
+        justify-content: space-between;
+    background-color: #C3ACEA;
+    background: linear-gradient(to bottom right,  #e7dcf8,20%, #C3ACEA);
+    color:#263238 ;
+    font-family: "Raleway", serif;
+    text-align: center;
+    line-height: 3rem;}
+
+footer img { width: 15%;
+             }
+
+             
+.footer-address { padding: 5%;}
+
+.footer-social { width: 40%;
+                padding: 2%;
+    }
+
+ .footer-social h5 {font-size: 70%;
+                    margin-top: 8%;
+                 
+                    }
+.footer-social img {width: 15%; 
+                    margin: 5%;}
+  
+
+@media screen and (max-width:800px)  {
+    .footer-address { display: none;
+                    } 
+                
+ footer img { width: 30%;}
+
+ .footer-social img {width: 30%; 
+                     margin: 5%;}
+
+
+ }
