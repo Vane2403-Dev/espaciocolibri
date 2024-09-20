@@ -1,0 +1,39 @@
+@use 'variables';
+
+
+
+@mixin Bg-img-format (){
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;}
+
+@mixin linearGradient ($color1 , $Acolor2) {
+    background-color: $Acolor1;
+    background: linear-gradient(to bottom right, $Acolor1, $Acolor2) ;}
+
+@mixin box ($color) {
+    background-color: ///ver herencia; 
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+    border-radius: 2%;
+    padding: 3%;
+}
+
+@mixin flex ( $flex, $flow, $wrap, $just, $aling, $gap ) {
+    display: $flex;
+    flex-flow: $flow ;
+    flex-wrap: $wrap;
+    justify-content: $just;
+    align-items: $align;
+    gap: $gap
+}
+
+
+@mixin movil () 
+{@media screen and (max-width:600px){
+    @content;
+}}
+
+@mixin tablet () 
+{@media screen and (max-width:800px){
+    @content;
+}}
