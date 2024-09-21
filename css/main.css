@@ -1,0 +1,84 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #FFFFFF;
+  background-color: #C3ACEA;
+  font-family: "Raleway", serif;
+}
+header img {
+  width: 30%;
+  height: 30%;
+}
+header a:hover {
+  box-shadow: 0 0 10px 5px #FFFFFF;
+}
+header .header-title {
+  padding-top: 2%;
+  font-family: "Raleway", serif;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 250;
+  line-height: 0;
+}
+header .header-index {
+  background-color: #FEFBF6;
+  color: #263238;
+}
+header .header-pages1 {
+  background-image: url("../img/fot/headerimgyoga.png");
+}
+header .header-pages2 {
+  background-image: url("../img/fot/headerimgterapias.png");
+}
+header .header-pages3 {
+  background-image: url("../img/fot/headerimgturnos.png");
+}
+header .header-pages4 {
+  background-image: url("../img/fot/headerimgcontacto.png");
+}
+@media screen and (max-width: 800px) {
+  header .logo {
+    display: none;
+  }
+}
+
+main {
+  background-color: #FEFBF6;
+  color: #263238;
+  font-family: "Raleway", serif;
+  padding: 2%;
+}
+@media screen and (max-width: 800px) {
+  main {
+    padding: 1%;
+  }
+}
+
+seccion-title {
+  display: inline-block;
+  position: relative;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-right: 130px; /* Espacio para la línea */
+}
+
+.seccion-title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%; /* Centrando verticalmente la línea */
+  transform: translateY(-50%); /* Ajustar para centrar la línea */
+  width: 120px;
+  height: 2px;
+  background-color: #263238;
+}
+
+/*# sourceMappingURL=main.css.map */

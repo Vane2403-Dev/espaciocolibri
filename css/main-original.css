@@ -9,13 +9,13 @@
     /* estilos de header*/
     
   
-  header { color: #FFFFFF;
-    font-family: "Raleway", serif;
+  header { color: #FFFFFF; --- 
+    font-family: "Raleway", serif;---
     font-size:  1.5rem;
     background-color: #C3ACEA;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center};
+    background-size: cover;----
+    background-repeat: no-repeat;--
+    background-position: center};--
 
 
 header  img { width: 30%;
@@ -29,7 +29,6 @@ header  img { width: 30%;
 
 .header-title {
             padding-top: 2%;
-            text-align: left;
             font-size: 3rem;
             font-weight: 250;
             text-align: center;

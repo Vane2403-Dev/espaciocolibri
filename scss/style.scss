@@ -1,0 +1,62 @@
+@import './Variables';
+@import './mixin';
+
+// resert
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+///header 
+header {
+    @include Bg-img-format ;
+    color: $color-Blanco;
+    background-color: $color-marca1;
+    font-family: $font-family;
+    img{width: 30%;
+        height: 30%;}
+    a:hover {box-shadow: 0 0 10px 5px $color-Blanco;}
+    .header-title {
+        padding-top: 2%;
+        @include texto2 (center , 3rem , 250 , 0 )}
+    .header-index{  
+            background-color: $Color-back;
+            color: $Color-negro;
+              }
+    
+    .header-pages1 {background-image: url("../img/fot/headerimgyoga.png"); }
+
+.header-pages2 {background-image: url("../img/fot/headerimgterapias.png");}
+
+.header-pages3 {background-image: url("../img/fot/headerimgturnos.png");}
+
+.header-pages4 {background-image: url("../img/fot/headerimgcontacto.png"); }
+@include tablet { .logo {display: none;}}}
+
+
+///main
+main { background-color: $Color-back;
+       color: $Color-negro;
+        font-family: $font-family;
+        padding: 2%; 
+@include tablet {padding: 1%;}
+}
+
+seccion-title { 
+    display: inline-block;
+    position: relative;
+    font-size: 1rem;
+    font-weight: bold; 
+    padding-right: 130px; /* Espacio para la línea */
+}
+
+.seccion-title::after {  
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%; /* Centrando verticalmente la línea */
+    transform: translateY(-50%); /* Ajustar para centrar la línea */
+    width: 120px; 
+    height: 2px; 
+    background-color: $Color-negro; 
+    }
+
+   /// 
