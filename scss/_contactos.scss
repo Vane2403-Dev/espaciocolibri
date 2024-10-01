@@ -1,0 +1,46 @@
+@import './Variables';
+@import './mixin';
+
+
+
+ 
+/* contactos*/
+
+/*tj contactos*/
+
+.contact-box-ppal{ 
+    @include flex (flex, row, nowrap, space-between , 2%);
+    @include movil {flex-direction: column; }
+} 
+@import './form';
+
+/* contactos  cajas direccion*/
+.contact{ 
+    @include flex ( flex,column-reverse, nowrap, space-between, 2rem);
+    text-align: center;
+    margin: 10%;
+
+
+    @include movil {flex-direction: column;}
+
+}
+
+.contact-box-uno {
+    @include box-style;
+    background-color: $color-backosc;
+    padding: 1%;
+     color: $color-Blanco; }
+
+  
+.contact-box-dos{  @include box-style;
+    background-color:$color-form;
+                    padding: 1%;
+                    }
+                    
+.contact-box-tres{ @include box-style;
+     background-color: $color-marca1;
+                        padding: 1%;
+                       }
+
+.contact-iframe iframe{width: 100%;}
+

@@ -1,0 +1,27 @@
+@import './Variables';
+@import './mixin';
+
+
+/* estilo de footer*/
+footer{ 
+    @include flex ( flex, row, nowrap,space-between, 0);
+    @include lineargradient ($color-marca1 ,#e7dcf8 );
+   
+    img { width: 15%;
+    
+@include tablet { width: 30%;}} }
+
+.footer-address { padding: 5%;
+    @include tablet { display: none;}
+}
+.footer-social { width: 40%;
+    padding: 2%;
+    h5 {font-size: 70%;
+        margin-top: 8%;
+    }
+    img {width: 15%; 
+        margin: 5%;
+    @include tablet { img {width: 30%; 
+        margin: 5%;}}
+    }
+}

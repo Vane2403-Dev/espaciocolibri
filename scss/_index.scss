@@ -1,0 +1,89 @@
+@import './Variables';
+@import './mixin';
+
+/* estilo de index*/
+
+/* contenido ppal */
+
+.acerca-de {@include flex ( flex , row , nowrap, 0,1%);
+    color: $color-grisclaro;
+
+img {margin-top: -10%;
+width: 50%;
+
+@include tablet { display: none; }; }
+
+h3{  font-size: 3rem;};
+p { font-size: 2rem;
+@include tablet { display: none; }}
+}
+
+.text-box {padding: 5%;
+line-height: 4rem;
+
+}
+
+/* pq elegirnos*/
+
+.pq-elegirnos{
+gap:2%;}
+
+.derecha{ 
+background-image: url("../img/fot/fotoindexseccion2.png");
+@include Bg-img-format;
+@include texto2 (left, inherit, 500, 2rem);
+display: grid;
+grid-template-columns: repeat(3 , 2fr) ;
+grid-template-rows: repeat(3, 2fr);
+background-size: 90%;
+@include movil { background-image: none;
+width: 100%;
+h3 { font-size: 1.5rem;};
+p { font-size: 1rem;
+padding: 1%;};
+a{ font-size: 1rem;}
+}
+
+}
+.tjt-esp1 { 
+@include lineargradient ($color-marca1 , $sombra-marca1);
+@include box-style  ;
+grid-column: 9;
+grid-row: 1;
+}
+
+.tjt-esp2 { 
+@include lineargradient ($color-marca2 ,  #F4BECD);
+@include box-style  ;
+grid-column: 6;
+grid-row: 2;
+@include movil {grid-column: 9;}
+}
+
+.tjt-esp3 { 
+@include lineargradient ($color-backosc,   #445057);
+@include box-style  ;
+grid-column: 9;
+grid-row: 3;
+color: $color-gris;
+
+}
+/*estilo Yoga-pagina 2/*
+
+/* nuestros cursos*/
+
+.nuestros-cursos {
+@include flex (flex , row, wrap, space-around, 2%);
+margin-bottom: 3%;
+}
+/* nuestros profes*/
+
+.profesores {
+@include flex (flex, row, wrap, space-around, 0);
+margin-bottom: 3%;
+}
+.tjt-prof {
+@include lineargradient ($color-marca1 ,$sombra-marca1);
+@include box-style  ;
+
+}

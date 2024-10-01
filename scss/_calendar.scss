@@ -1,0 +1,26 @@
+
+@import './Variables';
+@import './mixin';
+
+
+/*estilo de calendar*/
+
+.calendar{ 
+    @include flex (flex, row, nowrap, space-between,0);
+    margin-bottom: 2%;
+    img { width: 50%;
+        height: 50%;
+    @include movil {  display: none;}}}
+
+.iframe-container{ 
+    @include box-style;
+    @include lineargradient ($color-marca1, $sombra-marca1 );
+    padding: 2%;
+    width: 80%;
+    @include movil { width: 100%;};
+    iframe {
+        border: 1% solid $color-gris;
+        border-radius: 15%;
+        width: 100%;
+    @include movil {width:100%}}
+    }

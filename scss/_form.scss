@@ -1,0 +1,74 @@
+@import './Variables';
+@import './mixin';
+
+
+
+form {
+    max-width: 80%;
+    @include box-style;
+    @include lineargradient ($color-form , $color-form);
+    @include movil {max-width: 90%;
+        margin: 5%;}
+    }
+
+fieldset {
+    margin-bottom: 2%;
+
+}
+.fieldset-camp {
+    margin-bottom: 2%;
+}
+.fieldset-botton {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 2%;
+    font-weight: bold;
+    color: $Color-negro;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 2%;
+    border: 1px solid $color-form;
+    border-radius: 2%;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease
+}
+input[type="submit"],
+input[type="reset"] {
+    background-color: $color-marca2;
+    color: $Color-back;
+    padding: 2%;
+    border: none;
+    border-radius: 3%;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;}
+    
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    background-color : $color-grisclaro;
+                border-color: $color-gris;
+                box-shadow: 0 0 5px rgba(136, 136, 136, 0.5);
+                transition: background-color 0.3s ease;}
+
+
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: $color-backosc;
+}
+
+input[type="reset"] {
+    background-color: $color-marca1;
+}
