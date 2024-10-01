@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     background-position: center;}
 
-@mixin linearGradient ($color1 , $Acolor2) {
+@mixin lineargradient ($Acolor1 , $Acolor2) {
     background-color: $Acolor1;
     background: linear-gradient(to bottom right, $Acolor1, $Acolor2) ;}
 
@@ -19,18 +19,18 @@
             line-height: $line;}
             
 
-@mixin box ($color) {
+@mixin box-style  {
     box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
     border-radius: 2%;
     padding: 3%;
 }
 
-@mixin flex ( $flex, $flow, $wrap, $just, $aling, $gap ) {
+@mixin flex ( $flex, $flow, $wrap, $just, $gap ) {
     display: $flex;
-    flex-flow: $flow ;
+    flex-direction: $flow ;
     flex-wrap: $wrap;
     justify-content: $just;
-    align-items: $align;
+
     gap: $gap;
 }
 
@@ -42,5 +42,9 @@
 
 @mixin tablet () 
 {@media screen and (max-width:800px){
+    @content;
+}}
+@mixin tablet2 () 
+{@media screen and (min-width:800px){
     @content;
 }}

@@ -1,38 +1,45 @@
 @import './Variables';
 @import './mixin';
 
-// resert
+/*resert*/
 *{ margin: 0;
     padding: 0;
     box-sizing: border-box;}
-///header 
+
+ 
+/*header */
 header {
     @include Bg-img-format ;
     color: $color-Blanco;
     background-color: $color-marca1;
-    font-family: $font-family;
+    @include texto2 (inherit, 1.8rem , 0 , 0 );
     img{width: 30%;
-        height: 30%;}
-    a:hover {box-shadow: 0 0 10px 5px $color-Blanco;}
-    .header-title {
-        padding-top: 2%;
-        @include texto2 (center , 3rem , 250 , 0 )}
-    .header-index{  
+        height: 30%;}}
+
+   /* hover para todos los link*/
+   a:hover img {box-shadow: 0 0 10px 5px $color-Blanco;}
+
+
+
+.header-index{  
             background-color: $Color-back;
             color: $Color-negro;
-              }
-    
-    .header-pages1 {background-image: url("../img/fot/headerimgyoga.png"); }
+           }
+
+.header-pages1 {background-image: url("../img/fot/headerimgyoga.png"); }
 
 .header-pages2 {background-image: url("../img/fot/headerimgterapias.png");}
 
 .header-pages3 {background-image: url("../img/fot/headerimgturnos.png");}
 
 .header-pages4 {background-image: url("../img/fot/headerimgcontacto.png"); }
-@include tablet { .logo {display: none;}}}
 
 
-///main
+/*tablet*/
+ @include tablet2 { .logo {display: none;}}
+
+
+/*main*/
 main { background-color: $Color-back;
        color: $Color-negro;
         font-family: $font-family;
@@ -40,7 +47,7 @@ main { background-color: $Color-back;
 @include tablet {padding: 1%;}
 }
 
-seccion-title { 
+.seccion-title { 
     display: inline-block;
     position: relative;
     font-size: 1rem;
@@ -59,4 +66,286 @@ seccion-title {
     background-color: $Color-negro; 
     }
 
-   /// 
+/* estilo de index*/
+
+/* contenido ppal */
+
+.acerca-de {@include flex ( flex , row , nowrap, 0,1%);
+            color: $color-grisclaro;
+
+    img {margin-top: -10%;
+        width: 50%;
+
+    @include tablet { display: none; }; }
+
+        h3{  font-size: 3rem;};
+        p { font-size: 2rem;
+        @include tablet { display: none; }}
+    }
+
+    .text-box {padding: 5%;
+        line-height: 4rem;
+        
+     }
+ 
+/* pq elegirnos*/
+
+.pq-elegirnos{
+    gap:2%;}
+
+.derecha{ 
+    background-image: url("../img/fot/fotoindexseccion2.png");
+    @include Bg-img-format;
+    @include texto2 (left, inherit, 500, 2rem);
+    display: grid;
+    grid-template-columns: repeat(3 , 2fr) ;
+    grid-template-rows: repeat(3, 2fr);
+    background-size: 90%;
+    @include movil { background-image: none;
+        width: 100%;
+     h3 { font-size: 1.5rem;};
+     p { font-size: 1rem;
+        padding: 1%;};
+    a{ font-size: 1rem;}
+    }
+
+}
+.tjt-esp1 { 
+    @include lineargradient ($color-marca1 , $sombra-marca1);
+    @include box-style  ;
+    grid-column: 9;
+    grid-row: 1;
+}
+
+.tjt-esp2 { 
+    @include lineargradient ($color-marca2 ,  #F4BECD);
+    @include box-style  ;
+    grid-column: 6;
+    grid-row: 2;
+    @include movil {grid-column: 9;}
+}
+
+.tjt-esp3 { 
+    @include lineargradient ($color-backosc,   #445057);
+    @include box-style  ;
+    grid-column: 9;
+    grid-row: 3;
+    color: $color-gris;
+
+}
+/*estilo Yoga-pagina 2/*
+
+/* nuestros cursos*/
+
+.nuestros-cursos {
+    @include flex (flex , row, wrap, space-around, 2%);
+    margin-bottom: 3%;
+}
+/* nuestros profes*/
+
+.profesores {
+    @include flex (flex, row, wrap, space-around, 0);
+    margin-bottom: 3%;
+}
+.tjt-prof {
+    @include lineargradient ($color-marca1 ,$sombra-marca1);
+    @include box-style  ;
+
+}
+/* hacer yoga*/
+
+.yoga-1 { @include flex (flex, row, wrap,space-between,2%)}
+
+.hacer-yoga {
+    @include box-style;
+    @include lineargradient ($color-gris , #3d3d3d);
+    height: 20rem;
+            width: 20rem;
+
+    img { 
+        padding-left: 90%;}
+  
+}
+
+
+
+/*TERAPIAS*/
+
+.texto-terapias {
+    text-align: justify;
+    margin: 3% 5%;
+    ul li { list-style:url("../img/dibujos/florLILA.png");
+}}
+
+.terapias-dos { display: flex;
+    gap: 10rem;
+    text-align: justify;
+     line-height: 2rem;
+     @include movil {
+        background-image: radial-gradient(circle, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), 
+                          url("../img/fot/imagenterapias.png");
+        background-position: center;
+    }; 
+
+     img{ width: 40%;
+        height: 30%;
+    @include movil { display: none;}}
+
+        p { margin-top: 8%;
+    @include movil  {color: #FFFFFF;
+        text-align: center;}}
+
+   }
+/*estilo de calendar*/
+
+.calendar{ 
+    @include flex (flex, row, nowrap, space-between,0);
+    margin-bottom: 2%;
+    img { width: 50%;
+        height: 50%;
+    @include movil {  display: none;}}}
+
+.iframe-container{ 
+    @include box-style;
+    @include lineargradient ($color-marca1, $sombra-marca1 );
+    padding: 2%;
+    width: 80%;
+    @include movil { width: 100%;};
+    iframe {
+        border: 1% solid $color-gris;
+        border-radius: 15%;
+        width: 100%;
+    @include movil {width:100%}}
+    }
+ 
+/* contactos*/
+
+/*tj contactos*/
+
+.contact-box-ppal{ 
+    @include flex (flex, row, nowrap, space-between , 2%);
+    @include movil {flex-direction: column; }
+} 
+form {
+    max-width: 80%;
+    @include box-style;
+    @include lineargradient ($color-form , $color-form);
+    @include movil {max-width: 90%;
+        margin: 5%;}
+    }
+
+fieldset {
+    margin-bottom: 2%;
+
+}
+.fieldset-camp {
+    margin-bottom: 2%;
+}
+.fieldset-botton {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 2%;
+    font-weight: bold;
+    color: $Color-negro;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 2%;
+    border: 1px solid $color-form;
+    border-radius: 2%;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease
+}
+input[type="submit"],
+input[type="reset"] {
+    background-color: $color-marca2;
+    color: $Color-back;
+    padding: 2%;
+    border: none;
+    border-radius: 3%;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;}
+    
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    background-color : $color-grisclaro;
+                border-color: $color-gris;
+                box-shadow: 0 0 5px rgba(136, 136, 136, 0.5);
+                transition: background-color 0.3s ease;}
+
+
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: $color-backosc;
+}
+
+input[type="reset"] {
+    background-color: $color-marca1;
+}
+/* contactos  cajas direccion*/
+.contact{ 
+    @include flex ( flex,column-reverse, nowrap, space-between, 2rem);
+    text-align: center;
+    margin: 10%;
+
+
+    @include movil {flex-direction: column;}
+
+}
+
+.contact-box-uno {
+    @include box-style;
+    background-color: $color-backosc;
+    padding: 1%;
+     color: $color-Blanco; }
+
+  
+.contact-box-dos{  @include box-style;
+    background-color:$color-form;
+                    padding: 1%;
+                    }
+                    
+.contact-box-tres{ @include box-style;
+     background-color: $color-marca1;
+                        padding: 1%;
+                       }
+
+.contact-iframe iframe{width: 100%;}
+
+
+/* estilo de footer*/
+footer{ 
+    @include flex ( flex, row, nowrap,space-between, 0);
+    @include lineargradient ($color-marca1 ,#e7dcf8 );
+   
+    img { width: 15%;
+    
+@include tablet { width: 30%;}} }
+
+.footer-address { padding: 5%;
+    @include tablet { display: none;}
+}
+.footer-social { width: 40%;
+    padding: 2%;
+    h5 {font-size: 70%;
+        margin-top: 8%;
+    }
+    img {width: 15%; 
+        margin: 5%;
+    @include tablet { img {width: 30%; 
+        margin: 5%;}}
+    }
+}

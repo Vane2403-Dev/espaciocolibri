@@ -1,10 +1,12 @@
 @charset "UTF-8";
+/*resert*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*header */
 header {
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,44 +14,49 @@ header {
   color: #FFFFFF;
   background-color: #C3ACEA;
   font-family: "Raleway", serif;
+  text-align: inherit;
+  font-size: 1.8rem;
+  font-weight: 0;
+  line-height: 0;
 }
 header img {
   width: 30%;
   height: 30%;
 }
-header a:hover {
+
+/* hover para todos los link*/
+a:hover img {
   box-shadow: 0 0 10px 5px #FFFFFF;
 }
-header .header-title {
-  padding-top: 2%;
-  font-family: "Raleway", serif;
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 250;
-  line-height: 0;
-}
-header .header-index {
+
+.header-index {
   background-color: #FEFBF6;
   color: #263238;
 }
-header .header-pages1 {
+
+.header-pages1 {
   background-image: url("../img/fot/headerimgyoga.png");
 }
-header .header-pages2 {
+
+.header-pages2 {
   background-image: url("../img/fot/headerimgterapias.png");
 }
-header .header-pages3 {
+
+.header-pages3 {
   background-image: url("../img/fot/headerimgturnos.png");
 }
-header .header-pages4 {
+
+.header-pages4 {
   background-image: url("../img/fot/headerimgcontacto.png");
 }
-@media screen and (max-width: 800px) {
-  header .logo {
+
+/*tablet*/
+@media screen and (min-width: 800px) {
+  .logo {
     display: none;
   }
 }
-
+/*main*/
 main {
   background-color: #FEFBF6;
   color: #263238;
@@ -62,7 +69,7 @@ main {
   }
 }
 
-seccion-title {
+.seccion-title {
   display: inline-block;
   position: relative;
   font-size: 1rem;
@@ -79,6 +86,437 @@ seccion-title {
   width: 120px;
   height: 2px;
   background-color: #263238;
+}
+
+/* estilo de index*/
+/* contenido ppal */
+.acerca-de {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: 0;
+  gap: 1%;
+  color: #C6C6C6;
+}
+.acerca-de img {
+  margin-top: -10%;
+  width: 50%;
+}
+@media screen and (max-width: 800px) {
+  .acerca-de img {
+    display: none;
+  }
+}
+.acerca-de h3 {
+  font-size: 3rem;
+}
+.acerca-de p {
+  font-size: 2rem;
+}
+@media screen and (max-width: 800px) {
+  .acerca-de p {
+    display: none;
+  }
+}
+
+.text-box {
+  padding: 5%;
+  line-height: 4rem;
+}
+
+/* pq elegirnos*/
+.pq-elegirnos {
+  gap: 2%;
+}
+
+.derecha {
+  background-image: url("../img/fot/fotoindexseccion2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Raleway", serif;
+  text-align: left;
+  font-size: inherit;
+  font-weight: 500;
+  line-height: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(3, 2fr);
+  background-size: 90%;
+}
+@media screen and (max-width: 600px) {
+  .derecha {
+    background-image: none;
+    width: 100%;
+  }
+  .derecha h3 {
+    font-size: 1.5rem;
+  }
+  .derecha p {
+    font-size: 1rem;
+    padding: 1%;
+  }
+  .derecha a {
+    font-size: 1rem;
+  }
+}
+
+.tjt-esp1 {
+  background-color: #C3ACEA;
+  background: linear-gradient(to bottom right, #C3ACEA, #716296);
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 2%;
+  padding: 3%;
+  grid-column: 9;
+  grid-row: 1;
+}
+
+.tjt-esp2 {
+  background-color: #F4BECD;
+  background: linear-gradient(to bottom right, #F4BECD, #F4BECD);
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 2%;
+  padding: 3%;
+  grid-column: 6;
+  grid-row: 2;
+}
+@media screen and (max-width: 600px) {
+  .tjt-esp2 {
+    grid-column: 9;
+  }
+}
+
+.tjt-esp3 {
+  background-color: #263238;
+  background: linear-gradient(to bottom right, #263238, #445057);
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 2%;
+  padding: 3%;
+  grid-column: 9;
+  grid-row: 3;
+  color: #999999;
+}
+
+/*estilo Yoga-pagina 2/*
+
+/* nuestros cursos*/
+.nuestros-cursos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2%;
+  margin-bottom: 3%;
+}
+
+/* nuestros profes*/
+.profesores {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 0;
+  margin-bottom: 3%;
+}
+
+.tjt-prof {
+  background-color: #C3ACEA;
+  background: linear-gradient(to bottom right, #C3ACEA, #716296);
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 2%;
+  padding: 3%;
+}
+
+/* hacer yoga*/
+.yoga-1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2%;
+}
+
+.hacer-yoga {
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 2%;
+  padding: 3%;
+  background-color: #999999;
+  background: linear-gradient(to bottom right, #999999, #3d3d3d);
+  height: 20rem;
+  width: 20rem;
+}
+.hacer-yoga img {
+  padding-left: 90%;
+}
+
+/*TERAPIAS*/
+.texto-terapias {
+  text-align: justify;
+  margin: 3% 5%;
+}
+.texto-terapias ul li {
+  list-style: url("../img/dibujos/florLILA.png");
+}
+
+.terapias-dos {
+  display: flex;
+  gap: 10rem;
+  text-align: justify;
+  line-height: 2rem;
+}
+@media screen and (max-width: 600px) {
+  .terapias-dos {
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/fot/imagenterapias.png");
+    background-position: center;
+  }
+}
+.terapias-dos img {
+  width: 40%;
+  height: 30%;
+}
+@media screen and (max-width: 600px) {
+  .terapias-dos img {
+    display: none;
+  }
+}
+.terapias-dos p {
+  margin-top: 8%;
+}
+@media screen and (max-width: 600px) {
+  .terapias-dos p {
+    color: #FFFFFF;
+    text-align: center;
+  }
+}
+
+/*estilo de calendar*/
+.calendar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 0;
+  margin-bottom: 2%;
+}
+.calendar img {
+  width: 50%;
+  height: 50%;
+}
+@media screen and (max-width: 600px) {
+  .calendar img {
+    display: none;
+  }
+}
+
+.iframe-container {
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 2%;
+  padding: 3%;
+  background-color: #C3ACEA;
+  background: linear-gradient(to bottom right, #C3ACEA, #716296);
+  padding: 2%;
+  width: 80%;
+}
+@media screen and (max-width: 600px) {
+  .iframe-container {
+    width: 100%;
+  }
+}
+.iframe-container iframe {
+  border: 1% solid #999999;
+  border-radius: 15%;
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .iframe-container iframe {
+    width: 100%;
+  }
+}
+
+/* contactos*/
+/*tj contactos*/
+.contact-box-ppal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 2%;
+}
+@media screen and (max-width: 600px) {
+  .contact-box-ppal {
+    flex-direction: column;
+  }
+}
+
+form {
+  max-width: 80%;
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 2%;
+  padding: 3%;
+  background-color: #F4EDE5;
+  background: linear-gradient(to bottom right, #F4EDE5, #F4EDE5);
+}
+@media screen and (max-width: 600px) {
+  form {
+    max-width: 90%;
+    margin: 5%;
+  }
+}
+
+fieldset {
+  margin-bottom: 2%;
+}
+
+.fieldset-camp {
+  margin-bottom: 2%;
+}
+
+.fieldset-botton {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 2%;
+  font-weight: bold;
+  color: #263238;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  width: 100%;
+  padding: 2%;
+  border: 1px solid #F4EDE5;
+  border-radius: 2%;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type=submit],
+input[type=reset] {
+  background-color: #F4BECD;
+  color: #FEFBF6;
+  padding: 2%;
+  border: none;
+  border-radius: 3%;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+textarea:focus {
+  background-color: #C6C6C6;
+  border-color: #999999;
+  box-shadow: 0 0 5px rgba(136, 136, 136, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover {
+  background-color: #263238;
+}
+
+input[type=reset] {
+  background-color: #C3ACEA;
+}
+
+/* contactos  cajas direccion*/
+.contact {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 2rem;
+  text-align: center;
+  margin: 10%;
+}
+@media screen and (max-width: 600px) {
+  .contact {
+    flex-direction: column;
+  }
+}
+
+.contact-box-uno {
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 2%;
+  padding: 3%;
+  background-color: #263238;
+  padding: 1%;
+  color: #FFFFFF;
+}
+
+.contact-box-dos {
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 2%;
+  padding: 3%;
+  background-color: #F4EDE5;
+  padding: 1%;
+}
+
+.contact-box-tres {
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 2%;
+  padding: 3%;
+  background-color: #C3ACEA;
+  padding: 1%;
+}
+
+.contact-iframe iframe {
+  width: 100%;
+}
+
+/* estilo de footer*/
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 0;
+  background-color: #C3ACEA;
+  background: linear-gradient(to bottom right, #C3ACEA, #e7dcf8);
+}
+footer img {
+  width: 15%;
+}
+@media screen and (max-width: 800px) {
+  footer img {
+    width: 30%;
+  }
+}
+
+.footer-address {
+  padding: 5%;
+}
+@media screen and (max-width: 800px) {
+  .footer-address {
+    display: none;
+  }
+}
+
+.footer-social {
+  width: 40%;
+  padding: 2%;
+}
+.footer-social h5 {
+  font-size: 70%;
+  margin-top: 8%;
+}
+.footer-social img {
+  width: 15%;
+  margin: 5%;
+}
+@media screen and (max-width: 800px) {
+  .footer-social img img {
+    width: 30%;
+    margin: 5%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
