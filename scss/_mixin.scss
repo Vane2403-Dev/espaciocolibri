@@ -2,14 +2,13 @@
 
 
 
-@mixin Bg-img-format (){
+@mixin Bg-img-format {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;}
+    background-position: center;
+}
 
-@mixin lineargradient ($Acolor1 , $Acolor2) {
-    background-color: $Acolor1;
-    background: linear-gradient(to bottom right, $Acolor1, $Acolor2) ;}
+
 
 @mixin texto2 ($aling, $size, $weight, $line )
             {font-family: $font-family;
@@ -19,18 +18,17 @@
             line-height: $line;}
             
 
-@mixin box-style  {
-    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
-    border-radius: 2%;
+ @mixin box-style($background-color) {
+ background-color: $background-color;
     padding: 3%;
 }
+
 
 @mixin flex ( $flex, $flow, $wrap, $just, $gap ) {
     display: $flex;
     flex-direction: $flow ;
     flex-wrap: $wrap;
     justify-content: $just;
-
     gap: $gap;
 }
 

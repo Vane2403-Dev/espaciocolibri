@@ -1,17 +1,21 @@
 
+@import './Variables';
+@import './mixin'; 
 
 /*header */
 header {
     @include Bg-img-format ;
     background-color: $color-marca1;
-    @include texto2 (inherit, 1.8rem , 0 , 0 );
+    @include texto2 (inherit, 30px, 500, 3rem );
     color: $color-Blanco;
-    img{width: 30%;
-        height: 30%;}}
+    img{width: 15%;};
+    @include movil {font-size:20px;
+                    line-height: 1rem;}}
+
+
 
    /* hover para todos los link*/
    a:hover img {box-shadow: 0 0 10px 5px $color-Blanco;}
-
 
 
 .header-index{  
@@ -19,7 +23,8 @@ header {
             color: $Color-negro;
            }
 
-.header-pages1 {background-image: url("../img/fot/headerimgyoga.png"); }
+.header-pages1 {background-image: url("../img/fot/headerimgyoga.png");
+                 }
 
 .header-pages2 {background-image: url("../img/fot/headerimgterapias.png");}
 
@@ -28,17 +33,21 @@ header {
 .header-pages4 {background-image: url("../img/fot/headerimgcontacto.png"); }
 
 
-/*tablet*/
- @include tablet2 { .logo {display: none;}}
+
 
 
 /*main*/
 main { background-color: $Color-back;
        color: $Color-negro;
-        font-family: $font-family;
+        @include texto2 (justify, inherit, 400, 2rem);
+        h3 h2 h1 { font-size: 2rem;};
+        h4{ font-size: 1.5rem};
+        p { font-size: 1rem};
+
         padding: 2%; 
 @include tablet {padding: 1%;}
 }
+
 
 .seccion-title { 
     display: inline-block;

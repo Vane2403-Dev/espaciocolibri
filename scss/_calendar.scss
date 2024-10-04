@@ -13,9 +13,7 @@
     @include movil {  display: none;}}}
 
 .iframe-container{ 
-    @include box-style;
-    @include lineargradient ($color-marca1, $sombra-marca1 );
-    padding: 2%;
+    @include box-style ($color-marca1);
     width: 80%;
     @include movil { width: 100%;};
     iframe {

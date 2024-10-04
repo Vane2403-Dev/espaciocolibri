@@ -4,10 +4,9 @@
 
 
 form {
-    max-width: 80%;
-    @include box-style;
-    @include lineargradient ($color-form , $color-form);
-    @include movil {max-width: 90%;
+    max-width: 50%;
+    @include box-style ($color-form);
+    @include movil {max-width: 70%;
         margin: 5%;}
     }
 

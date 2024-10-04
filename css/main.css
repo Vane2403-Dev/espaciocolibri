@@ -11,17 +11,22 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  color: #FFFFFF;
   background-color: #C3ACEA;
   font-family: "Raleway", serif;
   text-align: inherit;
-  font-size: 1.8rem;
-  font-weight: 0;
-  line-height: 0;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 3rem;
+  color: #FFFFFF;
 }
 header img {
-  width: 30%;
-  height: 30%;
+  width: 15%;
+}
+@media screen and (max-width: 600px) {
+  header {
+    font-size: 20px;
+    line-height: 1rem;
+  }
 }
 
 /* hover para todos los link*/
@@ -50,18 +55,25 @@ a:hover img {
   background-image: url("../img/fot/headerimgcontacto.png");
 }
 
-/*tablet*/
-@media screen and (min-width: 800px) {
-  .logo {
-    display: none;
-  }
-}
 /*main*/
 main {
   background-color: #FEFBF6;
   color: #263238;
   font-family: "Raleway", serif;
+  text-align: justify;
+  font-size: inherit;
+  font-weight: 400;
+  line-height: 2rem;
   padding: 2%;
+}
+main h3 h2 h1 {
+  font-size: 2rem;
+}
+main h4 {
+  font-size: 1.5rem;
+}
+main p {
+  font-size: 1rem;
 }
 @media screen and (max-width: 800px) {
   main {
@@ -88,6 +100,77 @@ main {
   background-color: #263238;
 }
 
+.card-principal {
+  background-color: #F4EDE5;
+  padding: 3%;
+}
+.card-principal .card-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: 0;
+  gap: 3%;
+  align-items: center;
+}
+.card-principal .card-1 img {
+  padding: 2%;
+  width: 100%;
+  height: auto;
+}
+.card-principal .card-text {
+  padding: 2%;
+}
+.card-principal .card-text-center {
+  padding: 2%;
+  text-align: center;
+}
+
+.card-secundaria {
+  background-color: #999999;
+  padding: 3%;
+}
+.card-secundaria .card-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: 0;
+  gap: 3%;
+  align-items: center;
+}
+.card-secundaria .card-1 img {
+  padding: 2%;
+}
+.card-secundaria .card-text {
+  padding: 2%;
+}
+.card-secundaria .card-text-center {
+  padding: 2%;
+  text-align: center;
+}
+
+.card-principal-noaj {
+  background-color: #F4EDE5;
+  padding: 3%;
+}
+.card-principal-noaj .card-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: 0;
+  gap: 3%;
+  align-items: center;
+}
+.card-principal-noaj .card-1 img {
+  padding: 2%;
+}
+.card-principal-noaj .card-1 .card-text {
+  padding: 2%;
+}
+.card-principal-noaj .card-1 .card-text-center {
+  padding: 2%;
+  text-align: center;
+}
+
 /* estilo de index*/
 /* contenido ppal */
 .acerca-de {
@@ -95,158 +178,157 @@ main {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: 0;
-  gap: 1%;
-  color: #C6C6C6;
+  gap: 10%;
+  color: #999999;
+  font-family: "Raleway", serif;
+  text-align: justify;
+  font-size: inherit;
+  font-weight: 400;
+  line-height: 0;
 }
-.acerca-de img {
-  margin-top: -10%;
-  width: 50%;
+.acerca-de .text-box {
+  padding: 2%;
+  line-height: 2rem;
+  width: 55%;
 }
-@media screen and (max-width: 800px) {
-  .acerca-de img {
-    display: none;
-  }
-}
-.acerca-de h3 {
+.acerca-de .text-box h3 {
   font-size: 3rem;
+  text-align: center;
+  padding: 1%;
 }
-.acerca-de p {
-  font-size: 2rem;
+.acerca-de .text-box h3 p {
+  font-size: 1.5rem;
 }
-@media screen and (max-width: 800px) {
-  .acerca-de p {
+@media screen and (max-width: 600px) {
+  .acerca-de .text-box {
     display: none;
   }
 }
 
 .text-box {
-  padding: 5%;
-  line-height: 4rem;
+  padding: 2%;
+  line-height: 2rem;
+  width: 55%;
+}
+.text-box h3 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 1%;
+}
+.text-box p {
+  font-size: 1.5rem;
 }
 
 /* pq elegirnos*/
-.pq-elegirnos {
-  gap: 2%;
-}
-
-.derecha {
-  background-image: url("../img/fot/fotoindexseccion2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-family: "Raleway", serif;
-  text-align: left;
-  font-size: inherit;
-  font-weight: 500;
-  line-height: 2rem;
+.card-area {
   display: grid;
-  grid-template-columns: repeat(3, 2fr);
-  grid-template-rows: repeat(3, 2fr);
-  background-size: 90%;
-}
-@media screen and (max-width: 600px) {
-  .derecha {
-    background-image: none;
-    width: 100%;
-  }
-  .derecha h3 {
-    font-size: 1.5rem;
-  }
-  .derecha p {
-    font-size: 1rem;
-    padding: 1%;
-  }
-  .derecha a {
-    font-size: 1rem;
-  }
-}
-
-.tjt-esp1 {
-  background-color: #C3ACEA;
-  background: linear-gradient(to bottom right, #C3ACEA, #716296);
-  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
-  border-radius: 2%;
-  padding: 3%;
-  grid-column: 9;
-  grid-row: 1;
-}
-
-.tjt-esp2 {
-  background-color: #F4BECD;
-  background: linear-gradient(to bottom right, #F4BECD, #F4BECD);
-  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
-  border-radius: 2%;
-  padding: 3%;
-  grid-column: 6;
-  grid-row: 2;
-}
-@media screen and (max-width: 600px) {
-  .tjt-esp2 {
-    grid-column: 9;
-  }
-}
-
-.tjt-esp3 {
-  background-color: #263238;
-  background: linear-gradient(to bottom right, #263238, #445057);
-  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
-  border-radius: 2%;
-  padding: 3%;
-  grid-column: 9;
-  grid-row: 3;
-  color: #999999;
-}
-
-/*estilo Yoga-pagina 2/*
-
-/* nuestros cursos*/
-.nuestros-cursos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 2%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1%;
   margin-bottom: 3%;
+}
+@media screen and (max-width: 600px) {
+  .card-area {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card-principal {
+  background-color: #F4EDE5;
+  padding: 3%;
+}
+.card-principal .card-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: 0;
+  gap: 3%;
+  align-items: center;
+}
+.card-principal .card-1 img {
+  padding: 2%;
+  width: 100%;
+  height: auto;
+}
+.card-principal .card-text {
+  padding: 2%;
+}
+.card-principal .card-text-center {
+  padding: 2%;
+  text-align: center;
+}
+
+.card-secundaria {
+  background-color: #999999;
+  padding: 3%;
+}
+.card-secundaria .card-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: 0;
+  gap: 3%;
+  align-items: center;
+}
+.card-secundaria .card-1 img {
+  padding: 2%;
+}
+.card-secundaria .card-text {
+  padding: 2%;
+}
+.card-secundaria .card-text-center {
+  padding: 2%;
+  text-align: center;
+}
+
+.card-principal-noaj {
+  background-color: #F4EDE5;
+  padding: 3%;
+}
+.card-principal-noaj .card-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: 0;
+  gap: 3%;
+  align-items: center;
+}
+.card-principal-noaj .card-1 img {
+  padding: 2%;
+}
+.card-principal-noaj .card-1 .card-text {
+  padding: 2%;
+}
+.card-principal-noaj .card-1 .card-text-center {
+  padding: 2%;
+  text-align: center;
+}
+
+.yoga {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1%;
+  margin-bottom: 3%;
+}
+@media screen and (max-width: 600px) {
+  .yoga {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* nuestros profes*/
 .profesores {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1%;
   margin-bottom: 3%;
 }
-
-.tjt-prof {
-  background-color: #C3ACEA;
-  background: linear-gradient(to bottom right, #C3ACEA, #716296);
-  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
-  border-radius: 2%;
-  padding: 3%;
+@media screen and (max-width: 600px) {
+  .profesores {
+    grid-template-columns: 1fr;
+  }
 }
-
-/* hacer yoga*/
-.yoga-1 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2%;
-}
-
-.hacer-yoga {
-  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
-  border-radius: 2%;
-  padding: 3%;
-  background-color: #999999;
-  background: linear-gradient(to bottom right, #999999, #3d3d3d);
-  height: 20rem;
-  width: 20rem;
-}
-.hacer-yoga img {
-  padding-left: 90%;
+.profesores img {
+  width: 60%;
 }
 
 /*TERAPIAS*/
@@ -309,12 +391,8 @@ main {
 }
 
 .iframe-container {
-  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
-  border-radius: 2%;
-  padding: 3%;
   background-color: #C3ACEA;
-  background: linear-gradient(to bottom right, #C3ACEA, #716296);
-  padding: 2%;
+  padding: 3%;
   width: 80%;
 }
 @media screen and (max-width: 600px) {
@@ -333,32 +411,14 @@ main {
   }
 }
 
-/* contactos*/
-/*tj contactos*/
-.contact-box-ppal {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  gap: 2%;
-}
-@media screen and (max-width: 600px) {
-  .contact-box-ppal {
-    flex-direction: column;
-  }
-}
-
 form {
-  max-width: 80%;
-  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
-  border-radius: 2%;
-  padding: 3%;
+  max-width: 50%;
   background-color: #F4EDE5;
-  background: linear-gradient(to bottom right, #F4EDE5, #F4EDE5);
+  padding: 3%;
 }
 @media screen and (max-width: 600px) {
   form {
-    max-width: 90%;
+    max-width: 70%;
     margin: 5%;
   }
 }
@@ -427,45 +487,107 @@ input[type=reset] {
   background-color: #C3ACEA;
 }
 
-/* contactos  cajas direccion*/
-.contact {
+.card-principal {
+  background-color: #F4EDE5;
+  padding: 3%;
+}
+.card-principal .card-1 {
   display: flex;
-  flex-direction: column-reverse;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  gap: 2rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: 0;
+  gap: 3%;
+  align-items: center;
+}
+.card-principal .card-1 img {
+  padding: 2%;
+  width: 100%;
+  height: auto;
+}
+.card-principal .card-text {
+  padding: 2%;
+}
+.card-principal .card-text-center {
+  padding: 2%;
   text-align: center;
-  margin: 10%;
+}
+
+.card-secundaria {
+  background-color: #999999;
+  padding: 3%;
+}
+.card-secundaria .card-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: 0;
+  gap: 3%;
+  align-items: center;
+}
+.card-secundaria .card-1 img {
+  padding: 2%;
+}
+.card-secundaria .card-text {
+  padding: 2%;
+}
+.card-secundaria .card-text-center {
+  padding: 2%;
+  text-align: center;
+}
+
+.card-principal-noaj {
+  background-color: #F4EDE5;
+  padding: 3%;
+}
+.card-principal-noaj .card-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: 0;
+  gap: 3%;
+  align-items: center;
+}
+.card-principal-noaj .card-1 img {
+  padding: 2%;
+}
+.card-principal-noaj .card-1 .card-text {
+  padding: 2%;
+}
+.card-principal-noaj .card-1 .card-text-center {
+  padding: 2%;
+  text-align: center;
+}
+
+/* contactos*/
+/*tj contactos*/
+.contact-box-ppal {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-arround;
+  gap: 2%;
+  margin-bottom: 3%;
+}
+.contact-box-ppal form {
+  margin-left: 25%;
 }
 @media screen and (max-width: 600px) {
-  .contact {
-    flex-direction: column;
+  .contact-box-ppal form {
+    margin-left: 10%;
   }
 }
 
-.contact-box-uno {
-  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
-  border-radius: 2%;
-  padding: 3%;
-  background-color: #263238;
-  padding: 1%;
-  color: #FFFFFF;
+/* contactos  cajas direccion*/
+.contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1%;
+  margin-bottom: 3%;
 }
-
-.contact-box-dos {
-  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
-  border-radius: 2%;
-  padding: 3%;
-  background-color: #F4EDE5;
-  padding: 1%;
-}
-
-.contact-box-tres {
-  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
-  border-radius: 2%;
-  padding: 3%;
-  background-color: #C3ACEA;
-  padding: 1%;
+@media screen and (max-width: 600px) {
+  .contact {
+    grid-template-columns: 1fr;
+  }
 }
 
 .contact-iframe iframe {
@@ -478,21 +600,21 @@ footer {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  gap: 0;
+  gap: 1%;
   background-color: #C3ACEA;
-  background: linear-gradient(to bottom right, #C3ACEA, #e7dcf8);
+  padding: 3%;
 }
 footer img {
-  width: 15%;
+  width: 10%;
 }
 @media screen and (max-width: 800px) {
   footer img {
-    width: 30%;
+    width: 8%;
   }
 }
 
 .footer-address {
-  padding: 5%;
+  padding-top: 2%;
 }
 @media screen and (max-width: 800px) {
   .footer-address {
@@ -501,7 +623,7 @@ footer img {
 }
 
 .footer-social {
-  width: 40%;
+  width: 20%;
   padding: 2%;
 }
 .footer-social h5 {
@@ -514,7 +636,7 @@ footer img {
 }
 @media screen and (max-width: 800px) {
   .footer-social img img {
-    width: 30%;
+    width: 50%;
     margin: 5%;
   }
 }

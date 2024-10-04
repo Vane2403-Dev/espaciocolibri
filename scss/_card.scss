@@ -1,0 +1,42 @@
+@import './Variables';
+@import './mixin';
+
+    .card-principal {
+        @include box-style($color-form);  
+    .card-1 {@include flex (flex, column, wrap, 0,3% );
+        align-items: center;
+    img{padding: 2%;
+        width: 100%;
+        height: auto;}
+   }
+    .card-text{padding: 2%;}
+    .card-text-center{ 
+        padding: 2%;
+        text-align: center;}
+       }
+
+
+       .card-secundaria {
+        @include box-style($color-gris);  
+    .card-1 {@include flex (flex, column, wrap, 0,3% );
+        align-items: center;
+    img{padding: 2%;}
+   }
+    .card-text{padding: 2%;}
+    .card-text-center{ 
+        padding: 2%;
+        text-align: center;}
+       }
+
+       .card-principal-noaj {
+        @include box-style($color-form);  
+    .card-1 {@include flex (flex, column, wrap, 0,3% );
+        align-items: center;
+    img{padding: 2%;
+      
+   }
+    .card-text{padding: 2%;}
+    .card-text-center{ 
+        padding: 2%;
+        text-align: center;}
+       }}

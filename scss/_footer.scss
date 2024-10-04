@@ -4,24 +4,24 @@
 
 /* estilo de footer*/
 footer{ 
-    @include flex ( flex, row, nowrap,space-between, 0);
-    @include lineargradient ($color-marca1 ,#e7dcf8 );
+    @include flex ( flex, row, nowrap, space-between, 1%);
+    @include box-style ($color-marca1 );
    
-    img { width: 15%;
+    img { width: 10%;
     
-@include tablet { width: 30%;}} }
+@include tablet { width: 8%;}} }
 
-.footer-address { padding: 5%;
+.footer-address { padding-top: 2%;
     @include tablet { display: none;}
 }
-.footer-social { width: 40%;
+.footer-social { width: 20%;
     padding: 2%;
     h5 {font-size: 70%;
         margin-top: 8%;
     }
     img {width: 15%; 
         margin: 5%;
-    @include tablet { img {width: 30%; 
+    @include tablet { img {width: 50%; 
         margin: 5%;}}
     }
 }
