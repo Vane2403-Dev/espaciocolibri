@@ -1,26 +1,26 @@
 
-@import './Variables';
-@import './mixin'; 
+@import '../utilities/variables';
+@import '../utilities/mixin'; 
 
 /*header */
 header {
     @include Bg-img-format ;
     background-color: $color-marca1;
-    @include texto2 (inherit, 30px, 500, 3rem );
+    @include texto2 (left, 20px, 600, 4rem );
     color: $color-Blanco;
-    img{width: 15%;};
-    @include movil {font-size:20px;
+    img{width: 70%;};
+    @include movil {
                     line-height: 1rem;}}
 
 
 
    /* hover para todos los link*/
-   a:hover img {box-shadow: 0 0 10px 5px $color-Blanco;}
+   a:hover img {box-shadow: 0 0 10px 5px $color-Blanco;
+                transition: box-shadow 0.3s ease}
 
 
 .header-index{  
-            background-color: $Color-back;
-            color: $Color-negro;
+            background-image: url("../img/fot/headerindex.png");
            }
 
 .header-pages1 {background-image: url("../img/fot/headerimgyoga.png");

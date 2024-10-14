@@ -1,27 +1,27 @@
-@import './Variables';
-@import './mixin';
+@import '../utilities/variables';
+@import '../utilities/mixin';
 
 
 /* estilo de footer*/
-footer{ 
-    @include flex ( flex, row, nowrap, space-between, 1%);
+footer{ margin-top: 3%;
+    @include flex ( flex, row, wrap, space-between, 0.5%);
     @include box-style ($color-marca1 );
    
     img { width: 10%;
     
-@include tablet { width: 8%;}} }
+@include tablet {width: 25%;}} }
 
 .footer-address { padding-top: 2%;
     @include tablet { display: none;}
 }
-.footer-social { width: 20%;
+.footer-social {
     padding: 2%;
-    h5 {font-size: 70%;
+    h5 {font-size: 80%;
         margin-top: 8%;
     }
     img {width: 15%; 
         margin: 5%;
-    @include tablet { img {width: 50%; 
+    @include tablet { img {width: 20%; 
         margin: 5%;}}
     }
 }

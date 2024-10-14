@@ -1,7 +1,7 @@
-@import './Variables';
-@import './mixin';
-@import './form';
-@import './card';
+@import '../utilities/variables';
+@import '../utilities/mixin';
+@import '../components/form';
+@import '../components/card';
 
 
 
@@ -11,6 +11,8 @@
 /*tj contactos*/
 
 .contact-box-ppal{ 
+    h1 { font-size: 1.5rem};
+    h3 {font-size: 1rem};
     @include flex (flex, column, wrap, space-arround , 2%);
     margin-bottom: 3%;
     form{ margin-left: 25%;
@@ -27,4 +29,5 @@
     @include movil { grid-template-columns: 1fr};
 }
 
-.contact-iframe iframe{width: 100%;}
+.contact-iframe iframe{width: 100%;
+                        height: 50%;}

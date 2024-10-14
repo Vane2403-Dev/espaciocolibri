@@ -1,12 +1,13 @@
-@import './Variables';
-@import './mixin';
-@import './card';
+@import '../utilities/variables';
+@import '../utilities/mixin';
+@import '../components/card';
 
 /* estilo de index*/
 
 /* contenido ppal */
 
-.acerca-de {@include flex ( flex , row , nowrap, 0, 10%);
+.acerca-de {
+    @include flex ( flex , row , nowrap, 0, 10%);
     color: $color-gris;
 @include texto2 ( justify,inherit, 400 ,0 );
 .text-box {padding: 2%;
@@ -17,7 +18,8 @@
         padding: 1%;
    
     p{ font-size: 1.5rem;
-       }}
+       }
+  }
   @include movil { display: none;}}}
 
 
