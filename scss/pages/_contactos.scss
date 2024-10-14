@@ -11,8 +11,7 @@
 /*tj contactos*/
 
 .contact-box-ppal{ 
-    h1 { font-size: 1.5rem};
-    h3 {font-size: 1rem};
+
     @include flex (flex, column, wrap, space-arround , 2%);
     margin-bottom: 3%;
     form{ margin-left: 25%;

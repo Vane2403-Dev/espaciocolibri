@@ -4,12 +4,12 @@
 
 /* estilo de footer*/
 footer{ margin-top: 3%;
-    @include flex ( flex, row, wrap, space-between, 0.5%);
+    @include flex ( flex, row, wrap, space-between,0);
     @include box-style ($color-marca1 );
-   
-    img { width: 10%;
+    @include texto;
+    }
     
-@include tablet {width: 25%;}} }
+
 
 .footer-address { padding-top: 2%;
     @include tablet { display: none;}

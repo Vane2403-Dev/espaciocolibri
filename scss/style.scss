@@ -2,10 +2,10 @@
 
 @import './base/reset';
 @import './utilities/variables';
-@import './utilities/variables';
+@import './utilities/mixin';
+@import'./pages/headerymain';
 @import './components/card';
 @import './components/form';
-@import'./pages/headerymain';
 @import './pages/index';
 @import './pages/yoga';
 @import './pages/calendar';

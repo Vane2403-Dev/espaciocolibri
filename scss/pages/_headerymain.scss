@@ -6,7 +6,9 @@
 header {
     @include Bg-img-format ;
     background-color: $color-marca1;
-    @include texto2 (left, 20px, 600, 4rem );
+    font-family: $font-family;
+    font-size: 20px;
+    @include texto2 (left, 600, 4rem );
     color: $color-Blanco;
     img{width: 70%;};
     @include movil {
@@ -37,12 +39,11 @@ header {
 
 
 /*main*/
-main { background-color: $Color-back;
+main  { background-color: $Color-back;
        color: $Color-negro;
-        @include texto2 (justify, inherit, 400, 2rem);
-        h3 h2 h1 { font-size: 2rem;};
-        h4{ font-size: 1.5rem};
-        p { font-size: 1rem};
+       @include texto ;
+        @include texto2 (justify, 400, 2rem);
+     
 
         padding: 2%; 
 @include tablet {padding: 1%;}

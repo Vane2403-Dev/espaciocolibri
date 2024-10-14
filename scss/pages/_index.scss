@@ -7,9 +7,11 @@
 /* contenido ppal */
 
 .acerca-de {
+
+
     @include flex ( flex , row , nowrap, 0, 10%);
     color: $color-gris;
-@include texto2 ( justify,inherit, 400 ,0 );
+@include texto2 ( justify, 400 ,0 );
 .text-box {padding: 2%;
     line-height: 2rem;
     width: 55%;

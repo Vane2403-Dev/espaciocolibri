@@ -8,12 +8,21 @@
     background-position: center;
 }
 
+@mixin texto
+{font-family: $font-family;
+    h3 { font-size: 1rem;};
+    h2 { font-size: 1.2rem;};
+    h1 { font-size: 1.2rem;};
+        h4{ font-size: 1rem};
+        p{font-size: 1rem;}
+
+}
 
 
-@mixin texto2 ($aling, $size, $weight, $line )
-            {font-family: $font-family;
+
+@mixin texto2 ($aling, $weight, $line )
+            {
                text-align: $aling;
-             font-size: $size;
             font-weight: $weight;
             line-height: $line;}
             
