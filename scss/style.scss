@@ -1,14 +1,14 @@
 
 
-@import './base/reset';
-@import './utilities/variables';
-@import './utilities/mixin';
-@import'./pages/headerymain';
-@import './components/card';
-@import './components/form';
-@import './pages/index';
-@import './pages/yoga';
-@import './pages/calendar';
-@import './pages/contactos';
-@import './layout/footer';
+@use './base/reset';
+@use './utilities/variables';
+@use './utilities/mixin';
+@use  './components/card';
+@use './components/form';
+@use './pages/headerymain';
+@use './pages/index';
+@use './pages/yoga';
+@use './pages/calendar';
+@use './pages/contactos';
+@use './layout/footer';
  
